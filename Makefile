@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -fsanitize=address -g
 OBJ = board.o game.o
 
-all: clean game
+rebuild: clean game
 
 game : $(OBJ)
 	$(CC) $(CFLAGS) -o game $(OBJ)
